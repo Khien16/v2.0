@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+
+    <!-- HTML Forms - creates inputs and outputs that can a user interact -->
+    <!-- Input elemens - is for interactive controls-->
+    <form action=""> <!-- It groups and identifies that a user can interact with the webpage-->
+        <h1> Sample Form</h1>
+
+            <label for="fName" style="font-weight: bold;">First name:</label> </br>
+            <input type="text" id="fName" name="fName"> </br>
+    
+        
+            <label for="lName" style="font-weight: bold;">Last name:</label> </br>
+            <input type="text" id="lName" name="lName">
+        <p>
+            <input type="submit" value="Submit">
+            <!--Submit - confirms the values input by the user-->
+            <input type="reset" value="Clear">
+            <!--reset - removes the information provided by the user inside the form-->
+        </p> 
+    </form>
+
+    <h1>Survey Form</h1>
+
+    <form action="">
+        <p>
+            <label for="fName">First Name:</label>
+            <input type="text" id="fName" name="fName">
+        </p>
+
+        <p>
+            <label for="lName">Last Name:</label>
+            <input type="text" id="lName" name="lName">
+        </p>
+
+        <p>
+            <label for="emailAdd">Email Address:</label>
+            <input type="email" id="emailAdd" name="emailAdd">
+        </p>
+
+        <p>
+            <input type="radio" name="eType" id="eType">
+            <label for="eType">Onsite</label>
+            <input type="radio" name="eType" id="eType">
+            <label for="eType">Online</label>
+        </p>
+
+        <p>
+            <label for="bNum">Batch Number:</label>
+            <select name="bNum" id="bNum">
+                <option value="select">Select</option>
+                <option value="b1">Batch 1</option>
+                <option value="b2">Batch 2</option>
+                <option value="b3">Batch 3</option>
+                <option value="b4">Batch 4</option>
+                <option value="b5">Batch 5</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="Inst">Instructor:</label>
+            <input type="text" id="Inst" name="Inst">
+        </p>
+
+
+            What do you like about our bootcamp?
+        <p>
+            <input type="checkbox" name="classroom" id="classroom" value="classroom">
+            <label for="classroom">Classroom Experience</label> <br />
+
+            <input type="checkbox" name="expertise" id="expertise" value="expertise">
+            <label for="expertise">Instructor Expertise</label> 
+            <br />
+
+            <input type="checkbox" name="collab" id="collab" value="collab">
+            <label for="collab">Classmates Collaboration</label> <br />
+
+            <input type="checkbox" name="others" id="others" value="others">
+            <label for="collab">Others </label> 
+            <input type="text" name="others" id="others" placeholder="Please be specific.">
+           
+        </p>
+
+        <p>
+            <label for="Comment">Comments for your instructor:</label>
+            <textarea name="Comment" id="Comment" cols="30" rows="10" placeholder="Type full comments here."></textarea>
+
+            <!-- placeholder - helps the user to guide them while filling up their form-->
+        </p>
+
+        <p>
+            <input type="submit" value="Submit">
+            <!-- submit - confirms the values input by the user-->
+            <!-- Form handler - usual server page with scripts for processing inputs (backend)
+
+            -->
+            <input type="reset" value="Reset">
+            <!-- Reset - removes the information provided by the user inside the form-->
+        </p>
+    </form>
+
+
+</body>
+</html>

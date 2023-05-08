@@ -19,6 +19,7 @@
             <!-- tbody -group the body content in an HTML table-->
             <tr>
                 <!--tr -means table row-->
+                <!-- Advice: one table row per table data-->
                 <td>
                     <!--td - means table data-->
                     John Doe
@@ -37,6 +38,7 @@
     <p></p>
 
     <!--colspan - it defines the number of colums of the cell should span-->
+    <!-- it merges the unoccupied cell-->
 
     <table border="3">
         <thead>
@@ -66,6 +68,44 @@
                 <td>Channing Tatum</td>
                 <td>25</td>
                 <td>channing@email.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p></p>
+
+    <!--rowspan - it defines the number of rows a cell should span for more than 1 column-->
+    <!--Syntax: <td rowspan="2">-->
+    <!--Whereas the number is the value that can accummodate the number of rows-->
+
+    <table border="3" cellpadding="10">
+        <tbody>
+            <tr>
+                <!-- it covers the full details of the table rows-->
+                <td rowspan="4">
+                    Basic Information Sheet
+                </td>
+                <td>Name</td>
+                <td>Age</td>
+                <td>Email</td>
+            </tr>
+
+            <tr>
+                <td>John Doe</td>
+                <td>29</td>
+                <td>John@email.com</td>
+            </tr>
+
+            <tr>
+                <td>Jane Doe</td>
+                <td>27</td>
+                <td>Jane@email.com</td>
+            </tr>
+
+            <tr>
+                <td>Channing Tatum</td>
+                <td>35</td>
+                <td>Channing@email.com</td>
             </tr>
         </tbody>
     </table>
